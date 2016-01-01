@@ -106,8 +106,13 @@ int main(int argc, char *argv[])
 {
 	int values[] = {12,240,130,250,36,54,674,457,987,856,182,137,354,141};
 	initBucket(14, 9);
-	doSort(values, 14, 3, 9);
+	printf("before sort... \n");
 	printArray(values, 14);
+	printf("\n");
+	doSort(values, 14, 3, 9);
+	printf("after sort... \n");
+	printArray(values, 14);
+	printf("\n");
 	free(pAllBucketItemPoint);
 	free(pBucketArray);
 	printf("\n");
